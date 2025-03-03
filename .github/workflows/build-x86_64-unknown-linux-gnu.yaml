@@ -14,7 +14,7 @@ on:
 jobs:
   get_release:
     name: Get release
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, ubuntu-latest]
     outputs:
       upload_url: ${{ steps.get_upload_url.outputs.url }}
     steps:
